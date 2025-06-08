@@ -1,42 +1,54 @@
 .experiments-container {
   padding: 20px;
   font-family: sans-serif;
-  background-color: #e9f5ff;
+  background-color: #2c3e50; /* Dark background */
+  color: #ecf0f1; /* Light text */
   border-radius: 8px;
   margin: 20px;
+  min-height: 70vh; /* Ensure it takes some space */
 }
 
 .experiments-container h1 {
   text-align: center;
-  color: #2c3e50;
+  color: #ecf0f1; /* Light text for heading */
+  margin-bottom: 30px;
 }
 
-.experiments-container p {
+.experiments-container .page-description { /* New class for overall page description */
   text-align: center;
-  color: #34495e;
-  margin-bottom: 30px;
+  color: #bdc3c7; /* Lighter grey for description */
+  margin-bottom: 40px;
 }
 
 .experiments-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* Ensure grid takes full width and centers its content if only one item */
+  grid-template-columns: 1fr; /* Single column for one item */
+  justify-items: center; /* Center the grid item (tile) */
   gap: 20px;
 }
 
 .experiment-tile {
-  background-color: #ffffff;
-  border: 1px solid #bdc3c7;
+  background-color: #34495e; /* Slightly lighter dark for tile */
+  border: 1px solid #7f8c8d; /* Grey border */
   border-radius: 8px;
   padding: 20px;
-  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Adjusted shadow for dark theme */
+  width: 80%; /* Or a fixed width like minmax(300px, 600px) */
+  max-width: 700px; /* Max width for the tile */
+  color: #ecf0f1; /* Light text within tile */
 }
 
 .experiment-tile h2 {
   margin-top: 0;
-  color: #2980b9;
+  color: #95a5a6; /* Lighter grey for tile heading */
+  border-bottom: 1px solid #7f8c8d;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .experiment-tile p {
-  color: #7f8c8d;
+  color: #bdc3c7; /* Lighter grey for tile paragraph */
   text-align: left;
+  line-height: 1.6;
 }

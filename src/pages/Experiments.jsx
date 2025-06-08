@@ -1,24 +1,24 @@
 import React from 'react';
 import './Experiments.css';
+import SimpleTiptapEditor from '../../components/SimpleTiptapEditor'; // Adjusted path
 
 function Experiments() {
   return (
     <div className="experiments-container">
       <h1>My Experiments</h1>
-      <p>This is where my various coding experiments will be showcased.</p>
+      <p className="page-description">
+        This section showcases various coding experiments and proof-of-concepts.
+      </p>
       <div className="experiments-grid">
-        {/* Placeholder for experiment tiles */}
         <div className="experiment-tile">
-          <h2>Experiment 1</h2>
-          <p>Description of experiment 1.</p>
-        </div>
-        <div className="experiment-tile">
-          <h2>Experiment 2</h2>
-          <p>Description of experiment 2.</p>
-        </div>
-        <div className="experiment-tile">
-          <h2>Coming Soon</h2>
-          <p>More experiments on the way!</p>
+          <h2>template pdf test</h2>
+          <p>
+            This experiment focuses on using a Tiptap-based rich text editor to compose
+            a document from HTML templates. The goal is to then convert the
+            editor's HTML content into a PDF document, exploring different methods
+            for client-side and potentially server-side PDF generation.
+          </p>
+          <SimpleTiptapEditor />
         </div>
       </div>
     </div>

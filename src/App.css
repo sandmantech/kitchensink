@@ -1,5 +1,8 @@
+/* Global Dark Mode Styles */
 body {
-  margin: 0;
+  background-color: #222; /* Dark background for the entire page */
+  color: #ecf0f1; /* Light default text color */
+  margin: 0; /* Reset default margin */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -8,7 +11,7 @@ body {
 }
 
 .main-nav {
-  background-color: #333;
+  background-color: #333; /* Keep nav distinct but dark */
   padding: 10px 20px;
 }
 
@@ -21,15 +24,18 @@ body {
 }
 
 .main-nav ul li a {
-  color: white;
+  color: #ecf0f1; /* Ensure nav links are light */
   text-decoration: none;
   font-size: 1.1em;
 }
 
 .main-nav ul li a:hover {
+  color: #bdc3c7; /* Slightly dimmer on hover */
   text-decoration: underline;
 }
 
 .content-container {
   padding: 20px;
+  /* If content-container needs a specific background against the new body, define it here */
+  /* e.g., background-color: #2c3e50; if it's meant to be distinct from body */
 }

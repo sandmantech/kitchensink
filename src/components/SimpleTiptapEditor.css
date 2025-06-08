@@ -1,0 +1,71 @@
+/* Basic Styling for Tiptap Editor */
+.tiptap-editor-container {
+  border: 1px solid #7f8c8d; /* Grey border, suitable for dark themes */
+  border-radius: 4px;
+  padding: 10px;
+  background-color: #4a6572; /* Darker background for editor area if needed */
+  margin-top: 15px;
+}
+
+/* Tiptap content area default styling */
+.ProseMirror {
+  min-height: 150px;
+  padding: 10px;
+  background-color: #ecf0f1; /* Light background for the content area itself */
+  color: #2c3e50; /* Dark text for content */
+  border-radius: 4px;
+  outline: none; /* Remove focus outline if not desired */
+}
+
+.ProseMirror p {
+  margin: 0.5em 0;
+}
+
+.ProseMirror h1, .ProseMirror h2, .ProseMirror h3 {
+  color: #34495e; /* Slightly lighter dark for headings in content */
+}
+
+/* Menu Bar Styling */
+.tiptap-menu-bar {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #7f8c8d;
+}
+
+.tiptap-menu-bar button {
+  background-color: #5e8090; /* Button color */
+  color: #ecf0f1; /* Light text on buttons */
+  border: 1px solid #7f8c8d;
+  padding: 6px 10px;
+  margin-right: 5px;
+  margin-bottom: 5px; /* For wrapping */
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.tiptap-menu-bar button:hover {
+  background-color: #6a90a4;
+}
+
+.tiptap-menu-bar button.is-active {
+  background-color: #95a5a6; /* Active button color - light grey */
+  color: #2c3e50; /* Dark text for active button */
+}
+
+/* Load Sample Button Styling */
+.tiptap-load-button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #3498db; /* A distinct color for action button */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.tiptap-load-button:hover {
+  background-color: #2980b9;
+}
