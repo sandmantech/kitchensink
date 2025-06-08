@@ -57,7 +57,7 @@
 
 /* Load Sample Button Styling */
 .tiptap-load-button {
-  margin-top: 10px;
+  /* margin-top: 10px; (Removed to be handled by container) */
   padding: 8px 12px;
   background-color: #3498db; /* A distinct color for action button */
   color: white;
@@ -68,4 +68,11 @@
 
 .tiptap-load-button:hover {
   background-color: #2980b9;
+}
+
+/* Container for multiple load buttons */
+.tiptap-load-buttons-container {
+  margin-top: 10px;
+  display: flex; /* Arrange buttons in a row */
+  gap: 10px; /* Space between buttons */
 }
