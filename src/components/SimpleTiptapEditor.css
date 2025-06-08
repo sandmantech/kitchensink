@@ -15,6 +15,8 @@
   color: #2c3e50; /* Dark text for content */
   border-radius: 4px;
   outline: none; /* Remove focus outline if not desired */
+  max-height: 600px; /* Add this */
+  overflow-y: auto; /* Add this */
 }
 
 .ProseMirror p {
@@ -75,4 +77,20 @@
   margin-top: 10px;
   display: flex; /* Arrange buttons in a row */
   gap: 10px; /* Space between buttons */
+  align-items: center; /* Align items vertically in case of height differences */
+}
+
+/* Action Button Styling (e.g., for Export) */
+.tiptap-action-button {
+  padding: 8px 12px;
+  background-color: #27ae60; /* Green for export action */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  /* margin-left: 5px; /* Removed as gap in container handles spacing */
+}
+
+.tiptap-action-button:hover {
+  background-color: #229954;
 }
